@@ -1,0 +1,21 @@
+# Normal blister tablet packaging
+# Dolerin
+
+###
+GET {{$dotenv SAFEST_AT_ENDPOINT}}/MedicinalProductPackaged/01b74c0d-b4d5-47db-bfc1-36039b5726fe
+{{$dotenv SAFEST_AUTH_HEADER}}: {{$dotenv SAFEST_AT_API_KEY}}
+
+###
+GET {{$dotenv SAFEST_AT_ENDPOINT}}/MedicinalProductPackaged/?identifier=080364
+{{$dotenv SAFEST_AUTH_HEADER}}: {{$dotenv SAFEST_AT_API_KEY}}
+
+# Sett - two package components that will be mixed before use in seperate vials
+# Idelvion
+
+###
+GET {{$dotenv SAFEST_AT_ENDPOINT}}/MedicinalProductPackaged/df3ef4bc-9472-41f7-a1a8-9136743e8720
+{{$dotenv SAFEST_AUTH_HEADER}}: {{$dotenv SAFEST_AT_API_KEY}}
+
+###
+GET {{$dotenv SAFEST_AT_ENDPOINT}}/MedicinalProductPackaged/?identifier=537384
+{{$dotenv SAFEST_AUTH_HEADER}}: {{$dotenv SAFEST_AT_API_KEY}}
