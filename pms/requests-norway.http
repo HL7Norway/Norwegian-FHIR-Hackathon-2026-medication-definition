@@ -1,0 +1,3 @@
+### Get product with ManufacturedItemDefinition
+GET {{$dotenv PMS_BASE_URL}}/MedicinalProductDefinition/600001882398/$everything
+Authorization: Bearer {{$dotenv PMS_API_TOKEN}}

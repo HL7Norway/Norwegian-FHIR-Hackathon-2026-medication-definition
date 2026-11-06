@@ -1,0 +1,13 @@
+### Get products with Estonian authorizations (Non-CAPs)
+GET {{$dotenv PMS_BASE_URL}}/MedicinalProductDefinition
+    ?_has%3ARegulatedAuthorization%3Asubject%3Aregion=100000000388
+Authorization: Bearer {{$dotenv PMS_API_TOKEN}}
+
+### Get products for package with MA number 747511
+GET {{$dotenv PMS_BASE_URL}}/MedicinalProductDefinition
+    ?_has%3APackagedProductDefinition%3Apackage-for%3A_has%3ARegulatedAuthorization%3Asubject%3Aidentifier=747511
+Authorization: Bearer {{$dotenv PMS_API_TOKEN}}
+
+### Get all details of product with MA number 747511
+GET {{$dotenv PMS_BASE_URL}}/MedicinalProductDefinition/600001688082/$everything
+Authorization: Bearer {{$dotenv PMS_API_TOKEN}}
